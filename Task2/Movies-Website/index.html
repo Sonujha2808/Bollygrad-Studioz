@@ -1,0 +1,259 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Movie Website Re-Design</title>
+</head>
+
+<body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "1003601506490347");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">BollygradStudioz </h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">What We Do</li>
+                    <li class="menu-list-item">Founders</li>
+                    <li class="menu-list-item">Cantact</li>
+                    <li class="menu-list-item">About Us</li>
+                    <li class="menu-list-item">Division</li>
+                    <li class="menu-list-item">Blog</li>
+
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture" src="img/Bollygrad_Studioz-removebg-preview.png" alt="MH Miyazi">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fas fa-search"></i>
+        <i class="left-menu-icon fas fa-home"></i>
+        <i class="left-menu-icon fas fa-users"></i>
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-1.jpg');">
+                <img class="featured-title" src="img/Bollygrad_Studioz-removebg-preview.png" width="300px" alt="">
+                <p class="featured-desc"><h1>Bollygrad Studioz </h1></p><br><br>
+                <button class="featured-button">Get Connected</button>
+            </div>
+
+            <section class="products">
+                <h2>Our Products</h2>
+                <p>BollyGrad Studioz is a premier entertainment company that offers a diverse range of captivating experiences to users worldwide. Our portfolio includes an array of exciting offerings such as music trailers, music releases, movies, new products, and much more. Whether you are a fan of Hollywood, Bollywood, Tollywood, or any other film industry, BollyGrad Studioz has something for everyone.</p>
+                
+                <br><br>
+                <section class="gallery">
+                
+                <div class="grid">
+                    <div>
+                        <img src="img/image1.png" alt="Gallery Image 1">
+                        <h3>Listen Music</h3>
+                    </div>
+                    <div>
+                        <img src="img/image2.png" alt="Gallery Image 1">
+                        <h3>Watch Movies</h3>
+                    </div>
+                    <div>
+                        <img src="img/image3.png" alt="Gallery Image 1">
+                        <h3>Enjoy Trailers</h3>
+                    </div>
+                    <div>
+                        <img src="img/image.png" alt="Gallery Image 1">
+                        <h3>Our Products</h3>
+                    </div>
+                </div>
+            </section>
+            </section>
+
+
+
+            <section class="gallery">
+                <h2>Gallery</h2>
+                <div>
+                    <img src="img/16.jpg" alt="Gallery Image 1">
+                    <img src="img/14.jpg" alt="Gallery Image 2">
+                    <img src="img/10.jpg" alt="Gallery Image 3">
+                    <img src="img/18.jpg" alt="Gallery Image 1">
+                    <img src="img/4.jpg" alt="Gallery Image 2">
+                    <img src="img/9.jpg" alt="Gallery Image 3">
+                    <img src="img/17.jpg" alt="Gallery Image 1">
+                    <img src="img/11.jpg" alt="Gallery Image 2">
+                    <img src="img/19.jpg" alt="Gallery Image 3">
+                </div>
+                <br>
+            </section>
+
+
+            <div class="movie-list-container">
+                <br>
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/2.jpeg" alt="">
+                            <span class="movie-list-item-title">Star Wars</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/3.jpg" alt="">
+                            <span class="movie-list-item-title">Storm</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/4.jpg" alt="">
+                            <span class="movie-list-item-title">1917</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
+                            <span class="movie-list-item-title">Avengers</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/6.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
+                            <span class="movie-list-item-title">Her</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+
+
+
+ <!-- Subscription Section -->
+ <section class="subscribe-section">
+    <h2>Subscribe now for fresh content.</h2>
+    <form class="subscribe-form">
+        <input type="email" placeholder="Email" required>
+        <button type="submit">Sign Up</button>
+    </form>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo and Description -->
+        <div class="footer-logo">
+            <img src="img/Bollygrad_Studioz-removebg-preview.png" alt="Bollygrad Studioz Logo">
+            <h3>Bollygrad Studioz</h3>
+            <p>GET THE BEST STREAMING EXPERIENCE</p>
+        </div>
+        <!-- Navigation Links -->
+        <div class="footer-nav">
+            <h4>Navigation</h4>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">BLOGS</a></li>
+                <li><a href="#">FOUNDERS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <!-- Contact Details -->
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>41-A, Fourth Floor,<br>Kalu Sarai, Hauz Khas,<br>New Delhi-16</p>
+            <p>011 4140 7008</p>
+            <p>bollygrad.fti@gmail.com</p>
+            <p>Monday-Saturday: 10:00-18:00</p>
+        </div>
+        <!-- Social Media Links -->
+        <div class="footer-social">
+            <h4>Get Connected</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
